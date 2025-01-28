@@ -4,19 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekopdracht - NS-Treinbord</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div id="container">
         <div id="left">
-            <!-- hier komt de klok -->
+            <!-- Clock Container -->
+            <div class="clock">
+                <!-- Clock hands -->
+                <div style="--clr:#ff3d85; --ht:55px; --wt:5px" class="hand" id="hour"><i></i></div>
+                <div style="--clr:#00a6ff; --ht:45px; --wt:4px" class="hand" id="minute"><i></i></div>
+                <div style="--clr:rgb(139, 139, 221); --ht:40px; --wt:4px" class="hand" id="second"><i></i></div>
+
+                <!-- Clock numbers -->
+                <span style="--j:1"><b>1</b></span>
+                <span style="--j:2"><b>2</b></span>
+                <span style="--j:3"><b>3</b></span>
+                <span style="--j:4"><b>4</b></span>
+                <span style="--j:5"><b>5</b></span>
+                <span style="--j:6"><b>6</b></span>
+                <span style="--j:7"><b>7</b></span>
+                <span style="--j:8"><b>8</b></span>
+                <span style="--j:9"><b>9</b></span>
+                <span style="--j:10"><b>10</b></span>
+                <span style="--j:11"><b>11</b></span>
+                <span style="--j:12"><b>12</b></span>
+            </div>
         </div>
         <div id="middle">
-            <!-- Hier komt de reizigers info -->
+            <div id="middlewhite">
+                <div id="tijdafteller">25
+                    <div class="textoffset_afteller">minuten</div>
+                </div>
+                <div id="nslogo">
+                    <div id="newbox">Intercity</div>
+                    <img src="assets/img/NSLogo.png" alt="NS Logo">
+                </div>
+                <div class="textoffset_plaats">Rhenen</div>
+                <div class="textoffset_via">via Driebergen-Zeist, Veenendaal-Centrum, en Maarn</div>
+            </div>
+            <div id="middlebluestroke">
+                <div class="textoffset_hierna">Hierna iets blabla</div>
+            </div>
+            <div id="redbox"></div>
         </div>
         <div id="right">
-            <!-- hier komt het spoor nummer -->
+            <div id="vierkantrechts">
+                <div id="kleinblauwvierkantje">
+                    <div class="textoffset_spoor">spoor</div>
+                </div>
+                <div class="textoffset_18b">18b</div>
+            </div>
         </div>
     </div>
+    <script src="clock.js"></script>
 </body>
 </html>
